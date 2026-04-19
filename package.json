@@ -1,0 +1,43 @@
+{
+  "name": "@btw-studio/vault-sync",
+  "version": "0.1.0",
+  "description": "Sync markdown vault (Obsidian) → Notion pages. Frontmatter is the contract.",
+  "type": "module",
+  "bin": {
+    "vault-sync": "./bin/vault-sync.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "obsidian",
+    "notion",
+    "sync",
+    "markdown",
+    "pkm",
+    "cli"
+  ],
+  "author": "BTW Studio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/workmailan8n-hash/vault-sync.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.3.0",
+    "gray-matter": "^4.0.3",
+    "commander": "^12.1.0"
+  }
+}
