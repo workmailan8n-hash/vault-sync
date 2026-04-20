@@ -1,4 +1,4 @@
-# @btw-studio/vault-sync
+# obsidian-notion-cli
 
 **One-way sync from a markdown vault (Obsidian) to Notion pages. Frontmatter is the contract.**
 
@@ -15,9 +15,9 @@ Built at [BTW Studio](https://btw-studio.fly.dev). Extracted from our internal `
 ## Install
 
 ```bash
-npm install -g @btw-studio/vault-sync
+npm install -g obsidian-notion-cli
 # or use with npx (no install):
-npx @btw-studio/vault-sync@latest push
+npx obsidian-notion-cli@latest push
 ```
 
 Requires Node ≥ 20.
@@ -32,7 +32,7 @@ Go to **notion.so/profile/integrations** → create an internal integration → 
 
 ```bash
 cd /path/to/your/vault
-npx @btw-studio/vault-sync init
+npx obsidian-notion-cli init
 ```
 
 Creates `.vault-sync.json`:
@@ -75,7 +75,7 @@ Or add it to `.vault-sync.json` under `"token"` (not recommended for shared repo
 ### 5. Sync
 
 ```bash
-npx @btw-studio/vault-sync push
+npx obsidian-notion-cli push
 ```
 
 Output:

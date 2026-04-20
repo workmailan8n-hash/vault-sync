@@ -1,10 +1,14 @@
 {
-  "name": "@btw-studio/vault-sync",
+  "name": "obsidian-notion-cli",
   "version": "0.1.0",
-  "description": "Sync markdown vault (Obsidian) → Notion pages. Frontmatter is the contract.",
+  "description": "One-way CLI sync from Obsidian vault to Notion pages. Frontmatter is the contract.",
   "type": "module",
   "bin": {
-    "vault-sync": "./bin/vault-sync.js"
+    "vault-sync": "./bin/vault-sync.js",
+    "obsidian-notion": "./bin/vault-sync.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "exports": {
     ".": "./src/index.js"
@@ -30,7 +34,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/workmailan8n-hash/vault-sync.git"
+    "url": "git+https://github.com/workmailan8n-hash/vault-sync.git"
+  },
+  "homepage": "https://github.com/workmailan8n-hash/vault-sync#readme",
+  "bugs": {
+    "url": "https://github.com/workmailan8n-hash/vault-sync/issues"
   },
   "engines": {
     "node": ">=20"
